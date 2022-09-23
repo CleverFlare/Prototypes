@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/79e7cb3b97.js" crossorigin="anonymous" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="vidFrame hovered">
+        <div class="stateDisplay"><i class="fa-solid fa-play"></i></div>
+        <video src="videos/short cartoon video.mp4"></video>
+        <div class="vidControls">
+            <div class="timeLine">
+                <div class="currentTime" data-time='0'></div>
+            </div>
+            <div class="btnsLayout">
+                <div class="lhcBtns">
+                    <button class="muteTog"><i class="fa-solid fa-volume-high"></i></button>
+                    <div class="volumeLine">
+                        <div class="currentVol" data-time='100'></div>
+                    </div>
+                </div>
+                <div class="essentialBtns">
+                    <p class="currentSec">00:00:00</p>
+                    <button class="backwardBtn"><i class="fa-solid fa-backward"></i></button>
+                    <button class="startBtn" tabindex="-1"><i class="fa-solid fa-play"></i></button>
+                    <button class="forwardBtn"><i class="fa-solid fa-forward"></i></button>
+                    <p class="endTime">00:00:00</p>
+                </div>
+                <div class="rhcBtns">
+                    <button class="fsBtn"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

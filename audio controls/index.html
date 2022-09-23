@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Custom Controls</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jsmediatags-master/dist/jsmediatags.min.js"></script>
+    <script src="https://kit.fontawesome.com/79e7cb3b97.js" crossorigin="anonymous" defer></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <audio src=""></audio>
+        <header>
+            <h1>Music Title</h1>
+            <h2>Music Artist</h2>
+        </header>
+        <section>
+            <img src="images/Sound-Amplitude-Frame.svg" alt="Kiwi standing on oval">
+            <div title="Made By Clever">
+                <input type="file" id="selectMusic" accept="audio/mp3, audio/wav">
+                <label for="selectMusic"></label>
+            </div>
+            <input type="range" min="0" value="100" max="100" id="volControl">
+        </section>
+        <div id="timeLine">
+            <input type="range" min="0" value="0" max="100">
+            <p class="start">00:00</p>
+            <p class="end">end</p>
+        </div>
+        <div id="ContBtns">
+            <button class="backward"><i class="fa-solid fa-backward"></i></button>
+            <button class="playpause"><i class="fa-solid fa-play"></i></button>
+            <button class="forward"><i class="fa-solid fa-forward"></i></button>
+        </div>
+    </main>
+</body>
+</html>
